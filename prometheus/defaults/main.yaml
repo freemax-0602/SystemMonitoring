@@ -1,0 +1,10 @@
+---
+prometheus_version: 2.27.0
+prometheus_binary_local_dir: '/usr/local/bin'
+prometheus_skip_install: false
+
+prometheus_config_dir: /etc/prometheus
+prometheus_db_dir: /var/lib/prometheus
+prometheus_read_only_dirs: []
+
+prometheus_web_listen_address: "192.168.50.10:9090"
