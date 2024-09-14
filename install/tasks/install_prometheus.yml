@@ -1,6 +1,4 @@
 ---
-# -------------------------------------------------------------
-# Installing prometheus on host
 
 - name: create prometheus system group
   group:
@@ -94,4 +92,3 @@
     mode: 0644
   notify:
     - restart prometheus
-

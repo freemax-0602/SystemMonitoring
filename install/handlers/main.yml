@@ -11,3 +11,9 @@
   systemd:
     name: prometheus
     state: reloaded
+
+- name: restart node exporter
+  become: true
+  systemd: 
+    name: node_exporter
+    state: restarted

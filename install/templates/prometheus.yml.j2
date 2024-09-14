@@ -5,3 +5,7 @@ scrape_configs:
     scrape_interval: 5s 
     static_configs: 
       - targets: ['{{ prometheus_web_listen_address }}'] 
+  - job_name: 'node_exporter_debian'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['{{ prometheus_node_exporter_listen_address }}']

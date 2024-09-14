@@ -1,0 +1,8 @@
+---
+- include_tasks: install_prometheus.yml
+  tags:
+    - prometheus_install
+
+- include_tasks: install_node_exporter.yml
+  tags: 
+    - node_exporter_install
