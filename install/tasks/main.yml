@@ -1,4 +1,8 @@
 ---
+- include_tasks: system_configure.yml
+  tags:
+    - system_configure
+
 - include_tasks: install_prometheus.yml
   tags:
     - prometheus_install
@@ -6,3 +10,7 @@
 - include_tasks: install_node_exporter.yml
   tags: 
     - node_exporter_install
+
+- include_tasks: graphana_install.yml
+  tags: 
+    - graphana_install

@@ -1,0 +1,13 @@
+- name: copy graphana binary on host
+  copy: 
+    src: "{{ graphana_local_path }}"
+    dest: "/tmp"
+    mode: 0755
+    owner: root
+    group: root
+
+- name: install graphana
+  apt:
+    deb: /tmp/grafana-enterprise_11.2.0_amd64.deb
+  notify:
+    - restart graphana

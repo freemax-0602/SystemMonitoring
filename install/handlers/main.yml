@@ -17,3 +17,9 @@
   systemd: 
     name: node_exporter
     state: restarted
+
+- name: restart graphana 
+  become: true
+  systemd: 
+    name: grafana-server
+    state: reloaded

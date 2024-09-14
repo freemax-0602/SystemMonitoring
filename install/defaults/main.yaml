@@ -9,3 +9,5 @@ prometheus_read_only_dirs: []
 
 prometheus_web_listen_address: "192.168.50.10:9090"
 prometheus_node_exporter_listen_address: "192.168.50.10:9100"
+
+graphana_local_path: "/tmp/grafana-enterprise_11.2.0_amd64.deb"
