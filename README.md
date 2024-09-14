@@ -25,4 +25,4 @@ prometheus - grafana
 - установленный node exporter (http://192.168.50.10:9090/targets)
 ![Node exporter](images/nodeExp.png)
 - установленная grafana, с установленным дашбордом, для отслеживания объектов, указанных в задании:
-![Дашборд grafana](images/dashboard.png)
+![Дашборд grafana](images/grafana.png)
